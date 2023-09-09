@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body {
+    background-color: #f9fcff;
+}
+
+h1 {
+    font-family: Inter;
+    font-size: 64px;
+    line-height: 110%;
+}
+
+h2 {
+    font-family: Inter;
+    font-size: 48px;
+    line-height: 110%;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: Inter;
+    font-size: 24px;
+    line-height: 110%;
+}
+
+h4 {
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 110%;
+}
+
+p {
+    color:darkslategrey;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.row {
+    width: auto;
+}
+
+/*================= MOBILE =================*/
+@media screen and (max-width: 800px) {
+
+    .wrapper {
+        justify-content: center;
+    }
+
+    /*First section of the websites*/
+    .information-background {
+        width:100%;
+        height: 650px;
+        background-image: linear-gradient(to bottom right, white, #ccdff7);
+        border-radius: 0px 0px 40px 40px;
+        position: absolute;
+        z-index: -100;
+    }
+
+    .information {
+        flex-direction: column;
+        align-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        height: 450px;
+        padding: 6%;
+    }
+
+    .information-item {
+        text-align: center;
+        margin: auto;
+    }
+
+    #logo {
+        width: 70%;
+    }
+
+    /*BMI calculator*/
+    .calculator {
+        flex-direction: column;
+        align-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        width: 85%;
+        padding: 6%;
+        border-radius: 25px;
+        background-color: white;
+        box-shadow: 0 1px 4px #D8E2E7;
+    }
+
+    .calculator-item {
+        text-align: center;
+        margin: auto;
+    }
+}

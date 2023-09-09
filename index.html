@@ -3,41 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/home/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>BMI Calculator</title>
 </head>
 <body>
     <section>
-        <h1>Body Mass Index Calculator</h1>
-        <p>Better understand your weight in relation to your 
-            height using our body mass index (BM) calculator. 
-            While BMI is not the sole determinant of a healthy 
-            weight, it offers a valuable starting point to 
-            evaluate your overall health and well-being.
-        </p>
-        <div class="white box">
-            <h3>Enter your details below</h3>
-            <form>
-                <input type="radio" id="metric" name="unit" value="metric">
-                <label for="metric">Metric</label>
-                <input type="radio" id="imperial" name="unit" value="imperial">
-                <label for="imperial">Imperial</label>
-            </form>
-            <form>
-                <label for="height">Height</label><br>
-                <input type="text" id="height" name="measurements"><br>
-                <label for="weight">Weight</label><br>
-                <input type="text" id="weight" name="measurements">
-            </form>
-            <div class="blue box">
-                <p>Your BMI is...</p><br>
-                
-                <p>Your BMI suggests you’re a healthy weight. Your ideal weight is between</p>
+        <div class="information-background"></div>
+        <div class="information flex-container">
+            <div class="information-item">
+                <img src="images/logo.svg" id="logo">
+            </div>
+            <div class="information-item">
+                <h2>Body Mass Index Calculator</h2>
+            </div>
+            <div class="information-item">
+                <p>Better understand your weight in relation to your 
+                    height using our body mass index (BM) calculator. 
+                    While BMI is not the sole determinant of a healthy 
+                    weight, it offers a valuable starting point to 
+                    evaluate your overall health and well-being.
+                </p>
+            </div>
+        </div>
+        <div class="wrapper flex-container">
+            <div class="calculator flex-container">
+                <div class="calculator-item">
+                    <h3>Enter your details below</h3>
+                </div>
+                <form class="calculator-item">
+                    <input type="radio" id="metric" name="unit" value="metric">
+                    <label for="metric">Metric</label>
+                    <input type="radio" id="imperial" name="unit" value="imperial">
+                    <label for="imperial">Imperial</label>
+                </form>
+                <form class="calculator-item">
+                    <label for="height">Height</label><br>
+                    <input type="text" id="height1" name="measurements">
+                    <input type="text" id="height2" name="measurements"><br>
+                    <label for="weight">Weight</label><br>
+                    <input type="text" id="weight1s" name="measurements">
+                    <input type="text" id="weight2" name="measurements">
+                </form>
+                <div class="calculator-item">
+                    <p>Your BMI is...</p><br>
+                    
+                    <p>Your BMI suggests you're a healthy weight. Your ideal weight is between</p>
+                </div>
             </div>
         </div>
     </section>
     <section>
         <!--Imagem-->
-        <h2>What your BMI result means</h2>
+        <h3>What your BMI result means</h3>
         <p>A BMI range of 18.5 to 24.9 is considered a 
             'healthy weight.' Maintaining a healthy 
             weight may lower your chances of 
